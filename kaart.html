@@ -1,0 +1,2921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.svg">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <title>Kaart</title>
+</head>
+
+<body class="kaartBody">
+    <main>
+        <div id="layout">
+            <section id="infoBox">
+                <div id="infoCard">
+                    <h1 id="stadNaam">Stad Naam</h1>
+                    <h2 id="artistCount">100</h2>
+                    <h4 id="artiestenLabel">Artiesten</h4>
+                    <h3 id="genreLabel">Populairste genres</h3>
+                    <ol>
+                        <li>
+                            <b>432</b>
+                            <p class="genreButton"><span class="genreCirkel c1"></span><span class="genre">Underground
+                                    dutch</span>
+                            </p>
+                        </li>
+                        <li>
+                            <b>386</b>
+                            <p class="genreButton"><span class="genreCirkel c10"></span><span class="genre">Dutch
+                                    singer-songwriter</span></p>
+                        </li>
+                        <li>
+                            <b>289</b>
+                            <p class="genreButton"><span class="genreCirkel c3"></span><span class="genre">Rock</span>
+                            </p>
+                        </li>
+                        <li>
+                            <b>267</b>
+                            <p class="genreButton"><span class="genreCirkel c12"></span><span class="genre">Indie</span>
+                            </p>
+                        </li>
+                        <li>
+                            <b>256</b>
+                            <p class="genreButton"><span class="genreCirkel c12"></span><span class="genre">Underground
+                                    hip
+                                    hop</span></p>
+                        </li>
+                        <li>
+                            <b>166</b>
+                            <p class="genreButton"><span class="genreCirkel c1"></span><span class="genre">Amsterdam
+                                    underground</span></p>
+                        </li>
+                        <li>
+                            <b>123</b>
+                            <p class="genreButton"><span class="genreCirkel c9"></span><span
+                                    class="genre">folkrap</span></p>
+                        </li>
+                        <li>
+                            <b>122</b>
+                            <p class="genreButton"><span class="genreCirkel c6"></span><span class="genre">tuga</span>
+                            </p>
+                        </li>
+                    </ol>
+                    <h3 id="aantalOproepen">10</h3>
+                    <h4 id="oproepLabel">Oproepen</h4>
+                </div>
+                <button class="legendaButton"><span>Legenda</span></button>
+            </section>
+          
+
+
+
+
+
+            <section id="kaartBox">
+                <a href="stad.html">
+                    <div id="kaart">
+
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+                        <div class="blok">
+                            <div class="cirk"></div>
+                        </div>
+
+                    </div>
+                </a>
+            </section>
+            <section class="kaartLegenda">
+                <h3>Legenda</h3>
+                <ol>
+                    <li>
+                        <!-- <b>432</b> -->
+                        <p class="genreButton"><span class="genreCirkel c1"></span>
+                            <span class="genre">overig</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>386</b> -->
+                        <p class="genreButton"><span class="genreCirkel c2"></span>
+                            <span class="genre">experimental</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>289</b> -->
+                        <p class="genreButton"><span class="genreCirkel c3"></span>
+                            <span class="genre">electronisch</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>267</b> -->
+                        <p class="genreButton"><span class="genreCirkel c4"></span>
+                            <span class="genre">pop</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>256</b> -->
+                        <p class="genreButton"><span class="genreCirkel c5"></span>
+                            <span class="genre">hip-hop/rap</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>166</b> -->
+                        <p class="genreButton"><span class="genreCirkel c6"></span>
+                            <span class="genre">reggae</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>123</b> -->
+                        <p class="genreButton"><span class="genreCirkel c7"></span>
+                            <span class="genre">country</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>122</b> -->
+                        <p class="genreButton"><span class="genreCirkel c8"></span>
+                            <span class="genre">klassiek</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>102</b> -->
+                        <p class="genreButton"><span class="genreCirkel c9"></span>
+                            <span class="genre">folk</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>99</b> -->
+                        <p class="genreButton"><span class="genreCirkel c10"></span>
+                            <span class="genre">akoestisch</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>82</b> -->
+                        <p class="genreButton"><span class="genreCirkel c11"></span>
+                            <span class="genre">alternative</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>72</b> -->
+                        <p class="genreButton"><span class="genreCirkel c12"></span>
+                            <span class="genre">rock</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>68</b> -->
+                        <p class="genreButton"><span class="genreCirkel c13"></span>
+                            <span class="genre">metal</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>66</b> -->
+                        <p class="genreButton"><span class="genreCirkel c14"></span>
+                            <span class="genre">punk</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>65</b> -->
+                        <p class="genreButton"><span class="genreCirkel c15"></span>
+                            <span class="genre">funk</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>54</b> -->
+                        <p class="genreButton"><span class="genreCirkel c16"></span>
+                            <span class="genre">r&b/soul</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>52</b> -->
+                        <p class="genreButton"><span class="genreCirkel c17"></span>
+                            <span class="genre">blues</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>49</b> -->
+                        <p class="genreButton"><span class="genreCirkel c18"></span>
+                            <span class="genre">jazz</span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>48</b> -->
+                        <p class="genreButton"><span class="genreCirkel c19"></span>
+                            <span class="genre">spoken word </span>
+                        </p>
+                    </li>
+                    <li>
+                        <!-- <b>36</b> -->
+                        <p class="genreButton"><span class="genreCirkel c20"></span>
+                            <span class="genre">ambient</span>
+                        </p>
+                    </li>
+
+
+                </ol>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <nav>
+            <button class="footerFavoButton" onclick="javascript:location.href='./favoPage.html'"><img
+                    src="./img/Star.svg"></button>
+            <button class="allesButton" onclick="javascript:location.href='./index.html'"><img
+                    src="./img/Globe.svg"><span>Alle muziek</span></button>
+            <button class="kaartButton" onclick="javascript:location.href='./kaart.html'"><img
+                    src='./img/Kaart.svg'><span>Kaart</span></button>
+            <button class="profileButton" onclick="javascript:location.href='./login.html'"><img src="./img/person.svg">
+            </button>
+        </nav>
+    </footer>
+
+    <script>
+        function setup() {
+            createCanvas(windowWidth, windowHeight);
+        }
+
+        function draw() {
+            background('#EAEAEA');
+            line(120, 180, mouseX, mouseY);
+            strokeWeight(1.3);
+            setLineDash([8, 4]); //create the dashed line pattern here
+        }
+
+        function setLineDash(list) {
+            drawingContext.setLineDash(list);
+        }
+
+
+        let colors = ['#777777', '#00A9B4', '#00DBCE', '#00DBCE', '#21C972', '#21C972', '#21C972', '#028135', '#028135', '#679701', '#C9AB0F', '#FFC989', '#FED833', '#FFB423', '#B2765C', '#FA5E32', '#FA5E32', '#FF2727', '#FF3D8E', '#D743D1', '#A338E0', '#1140EA', '#7291FF', '#84C4FF', '#85D8DE'];
+        let widths = ['20%', '30%', '40%', '40%', '50%', '60%', '70%', '80%'];
+        let cirkels = document.querySelectorAll(".cirk");
+
+        for (i = 0; i < cirkels.length; i++) {
+            cirkels[i].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            cirkels[i].style.width = widths[Math.floor(Math.random() * widths.length)];
+        }
+
+        let stad = document.querySelector('#stadNaam');
+        let artistCount = document.querySelector('#artistCount');
+
+        let aantalOproepen = document.querySelector('#aantalOproepen');
+        let artiestenLabel = document.querySelector('#artiestenLabel');
+        let genreLabel = document.querySelector('#genreLabel')
+        let oproepLabel = document.querySelector('#oproepLabel')
+        let stadnamen = ['Amsterdam', 'Rotterdam', 'Haarlem', 'Amersfoort', 'Groningen', 'Leiden', 'Heerlen'];
+        let artiestAantallen = ['1249', '456', '23', '4', '789', '124', '986'];
+        let oproepAantallen = ['12', '2', '8', '45', '0', '22', '8'];
+
+
+
+        const AMS1 = document.querySelectorAll('#kaart ');
+        // :nth-child(404)'
+        for (step = 0; step < AMS1.length; step++) {
+            AMS1[step].addEventListener("mouseover", function (event) {
+                let rndInt3 = Math.floor(Math.random() * 7);
+                stad.textContent = stadnamen[rndInt3];
+
+                
+                artistCount.textContent = artiestAantallen[rndInt3];
+
+                aantalOproepen.textContent = oproepAantallen[rndInt3];
+                artiestenLabel.textContent = 'artiesten';
+                genreLabel.textContent = 'Populairste genres';
+                oproepLabel.textContent = 'oproepen';
+            });
+
+            // AMS1[step].addEventListener("mouseout", function (event) {
+            //     stad.textContent = '';
+            //     artistCount.textContent = '';
+
+            //     aantalOproepen.textContent = '';
+            //     artiestenLabel.textContent = '';
+            //     genreLabel.textContent = '';
+            //     oproepLabel.textContent = '';
+            // });
+
+        }
+        // arrayysss
+        let rndInt2 = Math.floor(Math.random() * 500);
+        const genreCirkels = document.querySelectorAll('.genreCirkel');
+        const genres = document.querySelectorAll('.genreButton');
+        for (let step = 0; step < genres.length; step++) {
+            genres[step].addEventListener('click', () => {
+                genres[step].classList.toggle('kleurAnimatie2');
+                if(genreCirkels[step].style.backgroundColor !== "#00A9B4"){
+                            console.log('niiet hze');
+                            cirkels[rndInt2].remove; 
+                }
+            });
+        }
+
+        // const kaartBodyCanvas = document.querySelector('.kaartBody main canvas');
+        // kaartBodyCanvas.style.width = '100%';
+    </script>
+    <script>
+        </script>
+</body>
+
+</html>

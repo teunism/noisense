@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.svg">
+    <title>Stad detail</title>
+</head>
+
+<body class="stadBody">
+
+    <section class="splash">
+        <section>
+            <img class="logo" src="./img/logo.svg" onclick="javascript:location.href='./index.html'">
+            <h1>Vind de muziek die jij wilt horen</h1>
+            <img class="logo verborgen" src="./img/logo.svg">
+        </section>
+        <div>
+            <figure><img src="./img/tut1.png">
+                <figcaption>zoom door scroll</figcaption>
+            </figure>
+
+            <figure><img src="./img/tut2.png">
+                <figcaption>navigeer door de ruimte</figcaption>
+                <p>De muziek is gesorteerd op klank </p>
+            </figure>
+
+            <figure><img src="./img/tut3.png">
+                <figcaption>luister met je muis</figcaption>
+            </figure>
+        </div>
+        <button class="playButton"><img src="./img/Play.png"> Play</button>
+    </section>
+    <!-- <div class="playPopup">
+
+    </div> -->
+
+    <!-- <canvas id="songo" class="song">
+        <div>
+            <figure>
+                <img class="albumArt" src="./img/albumcover1.png"><button></button>
+            </figure>
+        </div>
+        <div>
+            <h2 class="artistName">The Cool Sounds</h2>
+            <p class="songName">Crimson Mask<span class="trackDuration">4:34</span></p>
+            <p class="releaseDate">2022</p>
+        </div>
+    </canvas> -->
+    <div class="stadTop"> <button class="terugButton" onclick="javascript:location.href='./kaart.html'"><img
+                src="./img/backPijl.svg"><span>Terug</span></button>
+        <h1 class="stadNaam">Amsterdam</h1>
+    </div>
+
+
+
+    <a href="#newReleases" class="scrollButton">
+        <div><img src="./img/PointDown.svg"></div>
+    </a>
+
+    <section id="subgenres">
+        <button class="terugButton filterGenre"><span>filter op subgenres</span></button>
+        <h2>34 Subgenres in Amsterdam</h2>
+    </section>
+
+    <section id="genreOverlay" class="overlay genreFilter">
+        <button class="filterKruisje"><img src="./img/kruisje.svg"></button>
+        <h4>filter</h4>
+        <h2>34 Subgenres in Amsterdam</h2>
+        <ol>
+            <li>
+                <b>432</b>
+                <p class="genreButton"><span class="genreCirkel c1"></span><span class="genre">Underground dutch</span>
+                </p>
+            </li>
+            <li>
+                <b>386</b>
+                <p class="genreButton"><span class="genreCirkel c10"></span><span class="genre">Dutch
+                        singer-songwriter</span></p>
+            </li>
+            <li>
+                <b>289</b>
+                <p class="genreButton"><span class="genreCirkel c3"></span><span class="genre">Rock</span></p>
+            </li>
+            <li>
+                <b>267</b>
+                <p class="genreButton"><span class="genreCirkel c12"></span><span class="genre">Indie</span></p>
+            </li>
+            <li>
+                <b>256</b>
+                <p class="genreButton"><span class="genreCirkel c12"></span><span class="genre">Underground hip
+                        hop</span></p>
+            </li>
+            <li>
+                <b>166</b>
+                <p class="genreButton"><span class="genreCirkel c1"></span><span class="genre">Amsterdam
+                        underground</span></p>
+            </li>
+            <li>
+                <b>123</b>
+                <p class="genreButton"><span class="genreCirkel c9"></span><span class="genre">folkrap</span></p>
+            </li>
+            <li>
+                <b>122</b>
+                <p class="genreButton"><span class="genreCirkel c6"></span><span class="genre">tuga</span></p>
+            </li>
+            <li>
+                <b>102</b>
+                <p class="genreButton"><span class="genreCirkel c14"></span><span class="genre">irish punk</span></p>
+            </li>
+            <li>
+                <b>99</b>
+                <p class="genreButton"><span class="genreCirkel c4"></span><span class="genre">afropop</span></p>
+            </li>
+            <li>
+                <b>82</b>
+                <p class="genreButton"><span class="genreCirkel c12"></span><span class="genre">hard rock</span></p>
+            </li>
+            <li>
+                <b>72</b>
+                <p class="genreButton"><span class="genreCirkel c12"></span><span class="genre">spanish post-rock</span>
+                </p>
+            </li>
+            <li>
+                <b>68</b>
+                <p class="genreButton"><span class="genreCirkel c1"></span><span class="genre">thai idolmusique</span>
+                </p>
+            </li>
+            <li>
+                <b>66</b>
+                <p class="genreButton"><span class="genreCirkel c2"></span><span class="genre">tchadiennelatin</span>
+                </p>
+            </li>
+            <li>
+                <b>65</b>
+                <p class="genreButton"><span class="genreCirkel c8"></span><span class="genre">modern classical</span>
+                </p>
+            </li>
+            <li>
+                <b>54</b>
+                <p class="genreButton"><span class="genreCirkel c18"></span><span class="genre">jazz</span></p>
+            </li>
+            <li>
+                <b>52</b>
+                <p class="genreButton"><span class="genreCirkel c7"></span><span class="genre">nashville</span></p>
+            </li>
+            <li>
+                <b>49</b>
+                <p class="genreButton"><span class="genreCirkel c11"></span><span class="genre">indonesian idol</span>
+                </p>
+            </li>
+            <li>
+                <b>48</b>
+                <p class="genreButton"><span class="genreCirkel c13"></span><span class="genre">metal</span></p>
+            </li>
+            <li>
+                <b>36</b>
+                <p class="genreButton"><span class="genreCirkel c19"></span><span class="genre">easycore</span></p>
+            </li>
+            <li>
+                <b>33</b>
+                <p class="genreButton"><span class="genreCirkel c4"></span><span class="genre">popstreet</span></p>
+            </li>
+            <li>
+                <b>28</b>
+                <p class="genreButton"><span class="genreCirkel c9"></span><span class="genre">bandamharic</span></p>
+            </li>
+            <li>
+                <b>25</b>
+                <p class="genreButton"><span class="genreCirkel c12"></span><span class="genre">stoner</span></p>
+            </li>
+            <li>
+                <b>23</b>
+                <p class="genreButton"><span class="genreCirkel c12"></span><span class="genre">rockabilly</span></p>
+            </li>
+            <li>
+                <b>19</b>
+                <p class="genreButton"><span class="genreCirkel c4"></span><span class="genre">espanol</span></p>
+            </li>
+            <li>
+                <b>17</b>
+                <p class="genreButton"><span class="genreCirkel c4"></span><span class="genre">poptrap</span></p>
+            </li>
+            <li>
+                <b>16</b>
+                <p class="genreButton"><span class="genreCirkel c5"></span><span class="genre">trunmarathi</span></p>
+            </li>
+            <li>
+                <b>6</b>
+                <p class="genreButton"><span class="genreCirkel c9"></span><span class="genre">folklatin</span></p>
+            </li>
+            <li>
+                <b>4</b>
+                <p class="genreButton"><span class="genreCirkel c12"></span><span class="genre">surf</span></p>
+            </li>
+            <li>
+                <b>4</b>
+                <p class="genreButton"><span class="genreCirkel c12"></span><span class="genre">space rock</span></p>
+            </li>
+            <li>
+                <b>1</b>
+                <p class="genreButton"><span class="genreCirkel c14"></span><span class="genre">sonpunk</span></p>
+            </li>
+        </ol>
+    </section>
+
+    <section id="newReleases" class="releases">
+        <h2>Nieuwe releases in Amsterdam</h2>
+        <div class="art">
+            <div class="cards">
+                <section class="song">
+                    <div>
+                        <figure>
+                            <img src="./img/albumcover1.png" class="albumArt"><button class="favButton"></button>
+                        </figure>
+                    </div>
+                    <div class="cardRechts">
+                        <h2 class="artiestNaam">The Cool Sounds</h2>
+                        <p class="songNaam">Crimson Mask</p>
+                        <p class="releaseDate">2022</p>
+                    </div>
+                </section>
+
+                <section class="song">
+                    <div>
+                        <figure>
+                            <img src="./img/albumcover1.png"><button class="favButton"></button>
+                        </figure>
+                    </div>
+                    <div>
+                        <h2>The Cool Sounds</h2>
+                        <p>Crimson Mask<span class="trackDuration">4:34</span></p>
+                        <p class="releaseDate">2022</p>
+                    </div>
+                </section>
+
+                <section class="song">
+                    <div>
+                        <figure>
+                            <img src="./img/albumcover1.png"><button class="favButton"></button>
+                        </figure>
+                    </div>
+                    <div>
+                        <h2>The Cool Sounds</h2>
+                        <p>Crimson Mask<span class="trackDuration">4:34</span></p>
+                        <p class="releaseDate">2022</p>
+                    </div>
+                </section>
+
+                <section class="song">
+                    <div>
+                        <figure>
+                            <img src="./img/albumcover1.png"><button class="favButton"></button>
+                        </figure>
+                    </div>
+                    <div>
+                        <h2>The Cool Sounds & the lizard wizard</h2>
+                        <p>Crimson Mask<span class="trackDuration">4:34</span></p>
+                        <p class="releaseDate">2022</p>
+                    </div>
+                </section>
+
+                <section class="song">
+                    <div>
+                        <figure>
+                            <img src="./img/albumcover1.png"><button class="favButton"></button>
+                        </figure>
+                    </div>
+                    <div>
+                        <h2>The Cool Sounds</h2>
+                        <p>Crimson Mask<span class="trackDuration">4:34</span></p>
+                        <p class="releaseDate">2022</p>
+                    </div>
+                </section>
+
+                <section class="song">
+                    <div>
+                        <figure>
+                            <img src="./img/albumcover1.png"><button class="favButton"></button>
+                        </figure>
+                    </div>
+                    <div>
+                        <h2>The Cool Sounds</h2>
+                        <p>Crimson Mask<span class="trackDuration">4:34</span></p>
+                        <p class="releaseDate">2022</p>
+                    </div>
+                </section>
+
+                <section class="song">
+                    <div>
+                        <figure>
+                            <img src="./img/albumcover1.png"><button class="favButton"></button>
+                        </figure>
+                    </div>
+                    <div>
+                        <h2>The Cool Sounds</h2>
+                        <p>Crimson Mask<span class="trackDuration">4:34</span></p>
+                        <p class="releaseDate">2022</p>
+                    </div>
+                </section>
+
+                <section class="song">
+                    <div>
+                        <figure>
+                            <img src="./img/albumcover1.png"><button class="favButton"></button>
+                        </figure>
+                    </div>
+                    <div>
+                        <h2>The Cool Sounds</h2>
+                        <p>Crimson Mask<span class="trackDuration">4:34</span></p>
+                        <p class="releaseDate">2022</p>
+                    </div>
+                </section>
+            </div>
+            <button class="meerWeergeven">Meer weergeven<img src="./img/pijl2.svg"></button>
+        </div>
+    </section>
+
+    <section class="oproepen oproepScherm">
+        <div class="oproepenTopdiv">
+            <div>
+                <h1>68</h1>
+                <h2>Oproepen in Amsterdam</h2>
+            </div>
+            <button class="filterOproepen"><img src='./img/Filter.svg'><span>Filter</span></button>
+        </div>
+        <div class="cards">
+            <section class="oproep">
+                <div class="oproepHeader">
+                    <figure><img src="./img/pf.png"></figure>
+                    <h1 class="artiestNaam">The Cool Sounds</h1>
+                    <h5 class="distance">2 KM</h5>
+                </div>
+                <div class="tags">
+                    <div>muzikanten</div>
+                    <div>gitaristen</div>
+                    <div>genre: metal</div>
+                </div>
+                <div class="oproepTekst">Ben opzoek naar een opnameruimte in amsterdam of omgeving! Heb het nodig in
+                    juni - laat met weten als je mij daarmee kan helpen! </div>
+            </section>
+            <section class="oproep">
+                <div class="oproepHeader">
+                    <figure><img src="./img/pf.png"></figure>
+                    <h1 class="artiestNaam">The Cool Sounds</h1>
+                    <h5 class="distance">2 KM</h5>
+                </div>
+                <div class="tags">
+                    <div>artwork</div>
+                    <div>fotografie</div>
+                    <div>video</div>
+                    <div>Genre: Pop</div>
+                </div>
+                <div class="oproepTekst">Heyyeyeyy,
+                    Were looking for a fun new guitarists!! Please message us if you think you’d be a great fit for our band!!!  :))))) </div>
+            </section>
+            <section class="oproep">
+                <div class="oproepHeader">
+                    <figure><img src="./img/pf.png"></figure>
+                    <h1 class="artiestNaam">CROWS</h1>
+                    <h5 class="distance">3 KM</h5>
+                </div>
+                <div class="tags">
+                    <div>artwork</div>
+                    <div>fotografie</div>
+                    <div>video</div>
+                    <div>Genre: Pop</div>
+                </div>
+                <div class="oproepTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, condimentum lorem consequat ullamcorper. Purus amet, facilisis elit iaculis amet. At metus varius dignissim gravida nunc diam.  </div>
+            </section>
+            <section class="oproep">
+                <div class="oproepHeader">
+                    <figure><img src="./img/pf.png"></figure>
+                    <h1 class="artiestNaam">BLACK MIDI</h1>
+                    <h5 class="distance">5 KM</h5>
+                </div>
+                <div class="tags">
+                    <div>instrumenten/gear</div>
+                    <div>Genre: Alternatief</div>
+                </div>
+                <div class="oproepTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, condimentum lorem consequat ullamcorper. Purus amet, facilisis elit iaculis amet. </div>
+            </section>
+            <section class="oproep">
+                <div class="oproepHeader">
+                    <figure><img src="./img/pf.png"></figure>
+                    <h1 class="artiestNaam">POP FILTER</h1>
+                    <h5 class="distance">8 KM</h5>
+                </div>
+                <div class="tags">
+                    <div>artwork</div>
+                    <div>fotografie</div>
+                    <div>video</div>
+                    <div>Genre: Pop</div>
+                </div>
+                <div class="oproepTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, condimentum lorem consequat ullamcorper. Purus amet, facilisis elit iaculis amet. </div>
+            </section>
+            <section class="oproep">
+                <div class="oproepHeader">
+                    <figure><img src="./img/pf.png"></figure>
+                    <h1 class="artiestNaam">POP FILTER</h1>
+                    <h5 class="distance">8 KM</h5>
+                </div>
+                <div class="tags">
+                    <div>artwork</div>
+                    <div>fotografie</div>
+                    <div>video</div>
+                    <div>Genre: Pop</div>
+                </div>
+                <div class="oproepTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, condimentum lorem consequat ullamcorper. Purus amet, facilisis elit iaculis amet. </div>
+            </section>
+        </div>
+        <button class="meerWeergeven">Meer weergeven<img src="./img/pijl2.svg"></button>
+    </section>
+
+    <section class="oproepen oproepFilterScherm">
+        <div class="sticky">
+            <div class="filterTop">
+                <div>
+                    <h1>12</h1>
+                    <h2>Resultaten</h2>
+                </div>
+                <button class="filterKruisje filterKruisje2"><img src="./img/kruisje.svg"></button>
+
+            </div>
+            <div class="filterFlex">
+                <button class="filtersToepassen"><span>Filters toepassen</span><img src='./img/applyPijl.svg'></button>
+                <div class="sliderdiv">
+                    <p>Afstand</p>
+                    <p>vanaf Amsterdam</p>
+                    <div>
+                        <output name="ageOutputName" id="ageOutputId1" class="output">∞</output>
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="∞" value="50" class="slider" name="ageInputName"
+                                id="ageInputId1" oninput="ageOutputId1.value = ageInputId1.value + ' km'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="oproepFiltersectie">
+            <div class="headingsflex">
+                <section class="oproepGenres">
+                    <h2>Genre</h2>
+                    <ol>
+                        <li>
+                            <!-- <b>432</b> -->
+                            <p class="genreButton"><span class="genreCirkel c1"></span>
+                                <span class="genre">overig</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>386</b> -->
+                            <p class="genreButton"><span class="genreCirkel c2"></span>
+                                <span class="genre">experimental</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>289</b> -->
+                            <p class="genreButton"><span class="genreCirkel c3"></span>
+                                <span class="genre">electronisch</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>267</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">pop</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>256</b> -->
+                            <p class="genreButton"><span class="genreCirkel c5"></span>
+                                <span class="genre">hip-hop/rap</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>166</b> -->
+                            <p class="genreButton"><span class="genreCirkel c6"></span>
+                                <span class="genre">reggae</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>123</b> -->
+                            <p class="genreButton"><span class="genreCirkel c7"></span>
+                                <span class="genre">country</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>122</b> -->
+                            <p class="genreButton"><span class="genreCirkel c8"></span>
+                                <span class="genre">klassiek</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>102</b> -->
+                            <p class="genreButton"><span class="genreCirkel c9"></span>
+                                <span class="genre">folk</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>99</b> -->
+                            <p class="genreButton"><span class="genreCirkel c10"></span>
+                                <span class="genre">akoestisch</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>82</b> -->
+                            <p class="genreButton"><span class="genreCirkel c11"></span>
+                                <span class="genre">alternative</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>72</b> -->
+                            <p class="genreButton"><span class="genreCirkel c12"></span>
+                                <span class="genre">rock</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>68</b> -->
+                            <p class="genreButton"><span class="genreCirkel c13"></span>
+                                <span class="genre">metal</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>66</b> -->
+                            <p class="genreButton"><span class="genreCirkel c14"></span>
+                                <span class="genre">punk</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>65</b> -->
+                            <p class="genreButton"><span class="genreCirkel c15"></span>
+                                <span class="genre">funk</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>54</b> -->
+                            <p class="genreButton"><span class="genreCirkel c16"></span>
+                                <span class="genre">r&b/soul</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>52</b> -->
+                            <p class="genreButton"><span class="genreCirkel c17"></span>
+                                <span class="genre">blues</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>49</b> -->
+                            <p class="genreButton"><span class="genreCirkel c18"></span>
+                                <span class="genre">jazz</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>48</b> -->
+                            <p class="genreButton"><span class="genreCirkel c19"></span>
+                                <span class="genre">spoken word </span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>36</b> -->
+                            <p class="genreButton"><span class="genreCirkel c20"></span>
+                                <span class="genre">ambient</span>
+                            </p>
+                        </li>
+
+
+                    </ol>
+                </section>
+                <section>
+                    <h2>Muzikanten</h2>
+                    <ol>
+                        <li>
+                            <!-- <b>432</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">gitaar</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>386</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">toetsen</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>289</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">blaasinstrumenten</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>267</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">strijkinstrumenten</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>256</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">DJ</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>166</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">vocalisten</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>123</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">bas</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>122</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">drums</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>102</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">percussie</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>99</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">anders</span>
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+                <section>
+                    <h2>Productie</h2>
+                    <ol>
+                        <li>
+                            <!-- <b>432</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">opname</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>386</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">mix</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>289</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">mastering</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>267</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">studio</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>256</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">gear</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>166</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">artwork</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>123</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">fotografie</span>
+                            </p>
+                        </li>
+                        <li>
+                            <!-- <b>122</b> -->
+                            <p class="genreButton"><span class="genreCirkel c4"></span>
+                                <span class="genre">video</span>
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+                
+            </div>
+            
+
+        </section>
+      
+    </section>
+
+    
+
+    <footer>
+        <nav>
+            <button class="footerFavoButton" onclick="javascript:location.href='./favoPage.html'"><img
+                    src="./img/Star.svg"></button>
+            <button class="allesButton" onclick="javascript:location.href='./index.html'"><img
+                    src="./img/Globe.svg"><span>Alle muziek</span></button>
+            <button class="kaartButton" onclick="javascript:location.href='./kaart.html'"><img
+                    src='./img/Kaart.svg'><span>Kaart</span></button>
+            <button class="profileButton" onclick="javascript:location.href='./login.html'"><img src="./img/person.svg">
+            </button>
+        </nav>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"
+        integrity="sha512-WoO4Ih0CDOSLYafy22wZD/mcJ7k0ESLqtQsFa6zFKnEUrbtuGU+GkLtVhgt93xa2qewG5gKEC6CWlN8OaCTSVg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./three.module.js"
+            }
+        }
+    </script>
+    <script src="./buttonscript.js"></script>
+    <script src="./test.js" type="module"></script>
+    <script type="module" src="./wolk-stad2.js"></script>
+
+</body>
+
+</html>

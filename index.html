@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.svg">
+    <title>Stad detail</title>
+</head>
+
+<body class="homeBody">
+
+    <section class="splash">
+        <section>
+            <img class="logo" src="./img/logo.svg" onclick="javascript:location.href='./index.html'">
+            <h1>Vind de muziek die jij wilt horen</h1>
+            <img class="logo verborgen" src="./img/logo.svg">
+        </section>
+        <div>
+            <figure><img src="./img/tut1.png">
+                <figcaption>zoom door scroll</figcaption>
+            </figure>
+
+            <figure><img src="./img/tut2.png">
+                <figcaption>navigeer door de ruimte</figcaption>
+                <p>De muziek is gesorteerd op klank </p>
+            </figure>
+
+            <figure><img src="./img/tut3.png">
+                <figcaption>luister met je muis</figcaption>
+            </figure>
+        </div>
+        <button class="playButton"><img src="./img/Play.png"> Play</button>
+    </section>
+
+        <footer>
+            <nav>
+                <button class="footerFavoButton" onclick="javascript:location.href='./favoPage.html'"><img
+                        src="./img/Star.svg"></button>
+                <button class="allesButton" onclick="javascript:location.href='./index.html'"><img
+                        src="./img/Globe.svg"><span>Alle muziek</span></button>
+                <button class="kaartButton" onclick="javascript:location.href='./kaart.html'"><img
+                        src='./img/Kaart.svg'><span>Kaart</span></button>
+                <button class="profileButton" onclick="javascript:location.href='./login.html'"><img
+                        src="./img/person.svg">
+                </button>
+            </nav>
+        </footer>
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"
+        integrity="sha512-WoO4Ih0CDOSLYafy22wZD/mcJ7k0ESLqtQsFa6zFKnEUrbtuGU+GkLtVhgt93xa2qewG5gKEC6CWlN8OaCTSVg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./three.module.js"
+            }
+        }
+    </script>
+    <script src="./buttonscript.js"></script>
+    <script type="module" src="./wolk-stad2.js"></script>
+
+</body>
+
+</html>

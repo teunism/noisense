@@ -1,0 +1,1991 @@
+@font-face {
+  font-family: "GraphikExtraLight";
+  src: url("./font/Graphik-Extralight.otf");
+}
+
+@font-face {
+  font-family: "GraphikRegular";
+  src: url("./font/Graphik-Regular.otf");
+}
+
+@font-face {
+  font-family: "GraphikSemi";
+  src: url("./font/Graphik-Semibold.otf");
+}
+
+
+
+a:visited {
+  text-decoration: none;
+  color: #322F2C;
+}
+
+a:focus {
+  text-decoration: none;
+  color: #322F2C;
+}
+
+a:active {
+  text-decoration: none;
+  color: #322F2C
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #EDE9E9;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+body {
+  margin: 0;
+  font-family: 'GraphikRegular';
+
+}
+
+
+h2 {
+  font-weight: 100;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-family: 'GraphikSemi';
+  font-weight: 900;
+  font-size: .8em;
+  color: #666666;
+
+}
+
+.artiestNaam {
+  text-transform: uppercase;
+}
+
+.kaartBody {
+  height: 100vh;
+}
+
+
+.kaartBody canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #EAEAEA;
+  width: 100%;
+  height: 100%;
+}
+
+.stadBody canvas {
+  /* position: relative;  */
+  /* top: 100px */
+
+}
+
+.stadBody .stadTop {
+  position: absolute;
+  top: 0;
+  font-family: 'GraphikExtralight';
+  font-weight: 100;
+  font-size: 4em;
+  margin-left: 5%;
+  margin-top: 10px;
+}
+
+.stadBody .stadNaam {
+  font-family: 'GraphikExtralight';
+  font-weight: 100;
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+.obit-controls-gizmo {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  z-index: 1000;
+  background-color: #FFF0;
+  border-radius: 100%;
+  transition: background-color .15s linear;
+  cursor: pointer;
+  font-size: 22px;
+
+}
+
+.obit-controls-gizmo.dragging,
+.obit-controls-gizmo:hover {
+  background-color: #FFF3;
+}
+
+.obit-controls-gizmo.inactive {
+  pointer-events: none;
+  background-color: #FFF0 !important;
+}
+
+.terugButton,
+.filterOproepen {
+  border: 1px dashed #322F2C;
+  background-color: #FFFAF9;
+  border-radius: 50px;
+  padding: 15px 20px 15px 20px;
+
+  display: flex;
+  align-items: center;
+
+}
+
+.filterOproepen {
+  background-color: #26E888;
+  height: 50px;
+}
+
+.filterOproepen img {
+  margin-right: 8px;
+  width: 15px;
+  margin-top: -4px;
+}
+
+.oproepen> :first-child {
+  padding: 1% 5% 1% 5%;
+}
+
+.filterTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+.filterOproepen:hover {
+  border: 1px solid;
+}
+
+.terugButton img {
+  width: 35%;
+  margin-right: 5px;
+}
+
+.terugButton:hover {
+  border: 2px solid black;
+  transition: 1s;
+  transform: scale(1.2);
+  transform: rotate(7deg);
+  transition-timing-function: cubic-bezier(.05, .8, .23, .97);
+}
+
+button {
+  font-family: 'GraphikRegular';
+  cursor: pointer;
+  transition: .2s;
+}
+
+
+.playPopup {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.scrollButton {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  padding: 2px;
+  margin-left: 50%;
+  margin-right: 50%;
+  z-index: 2;
+}
+
+.scrollButton div {
+  display: flex;
+  background: white;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  border: 1px dashed #322F2C;
+  transition: .2s;
+}
+
+.scrollButton div:hover {
+  transform: scale(1.1);
+  transition: .2s;
+}
+
+.scrollButton img {
+  cursor: pointer;
+  width: 20px;
+}
+
+.one-word-per-line {
+  word-spacing: 100vw;
+  ;
+}
+
+.cities {
+  width: min-intrinsic;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  display: table-caption;
+  display: -ms-grid;
+  -ms-grid-columns: min-content;
+
+
+  position: absolute;
+}
+
+/*bloks*/
+.blok {
+  aspect-ratio: 1;
+  background-color: #322F2C;
+  transition: .25s;
+  display: flex;
+}
+
+.blok:hover {
+  transform: scale(1.9);
+  transition: .25s;
+  cursor: pointer;
+  background-color: #FFFAF9;
+  border: 1px dashed black;
+}
+
+.cirk {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+
+  background-color: #EA5E33;
+  margin: auto;
+}
+
+
+#layout {
+  display: flex;
+  flex-direction: row;
+}
+
+#infoBox {
+  width: 25%;
+  padding: 2% 0% 5% 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+#infoCard {
+  background: white;
+  text-transform: uppercase;
+  padding: 15px;
+  border: 1px dashed #202020;
+  position: absolute;
+}
+
+#infoCard h1 {
+  font-family: 'GraphikExtraLight';
+  font-size: 2em;
+  font-weight: 100;
+  margin: 0;
+}
+
+#infoCard h2 {
+  font-family: 'GraphikExtraLight';
+  font-size: 4em;
+  font-weight: 100;
+  margin: 0;
+}
+
+#infoCard h3 {
+  font-family: 'GraphikRegular';
+  font-size: 1.4em;
+  font-weight: 100;
+  text-transform: initial;
+  margin-bottom: 4px;
+  margin-top: 1em;
+}
+
+#infoCard h4 {
+  font-family: 'GraphikRegular';
+  font-size: .8em;
+  font-weight: 100;
+  margin: 0;
+  ;
+}
+
+.kaartBody ol {
+  list-style: none;
+  text-transform: initial;
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+.kaartBody ol li {
+  display: flex;
+  align-items: center;
+}
+
+.kaartBody ol li b {
+  font-size: .8em;
+  color: #322F2C;
+  opacity: .5;
+}
+
+#infoCard p {
+  background-color: #FFFAF9;
+  color: #322F2C;
+  border: 1px solid #C4C4C4;
+}
+
+
+.kaartBody .genre {
+  padding: 5px;
+}
+
+
+#kaartBox {}
+
+
+.kaartLegenda {
+  padding: 5%;
+}
+
+
+.kaartLegenda h3 {
+  font-weight: 100;
+}
+
+
+.kaartLegenda .genreButton {
+  margin: 0px 5px 7px 0px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.legendaButton {
+  height: 60px;
+  width: 150px;
+  border: 1px dashed;
+  border-radius: 50px;
+  background-color: white;
+  position: absolute;
+  top: 578px;
+  display: none;
+}
+
+#kaart {
+  display: grid;
+  grid-template-columns: [screen-left] repeat(28, 3vmin) [screen-left];
+  grid-template-rows: [screen-top] repeat(31, 3vmin) [screen-bottom];
+  grid-gap: 2px;
+}
+
+
+#kaart .blok:nth-child(n+1):nth-child(-n+17) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+19):nth-child(-n+20) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+22):nth-child(-n+42) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+44):nth-child(-n+47) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+54):nth-child(-n+68) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+70):nth-child(-n+73) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+83):nth-child(-n+95) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+97):nth-child(-n+99) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+113):nth-child(-n+122) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+125):nth-child(-n+127) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+140):nth-child(-n+150) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+151):nth-child(-n+154) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+167):nth-child(-n+177) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+179):nth-child(-n+182) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+196):nth-child(-n+205) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+209):nth-child(-n+210) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+223):nth-child(-n+233) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+237):nth-child(-n+240) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+251):nth-child(-n+261) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+266):nth-child(-n+267) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+279):nth-child(-n+288) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+292):nth-child(-n+296) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+304):nth-child(-n+316) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+321):nth-child(-n+322) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+335):nth-child(-n+344) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(349) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+362):nth-child(-n+372) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+391):nth-child(-n+399) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+419):nth-child(-n+427) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+446):nth-child(-n+454) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+473):nth-child(-n+481) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+501):nth-child(-n+508) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+529):nth-child(-n+535) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+552):nth-child(-n+564) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+579):nth-child(-n+591) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+609):nth-child(-n+617) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(621) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+637):nth-child(-n+645) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+650):nth-child(-n+651) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+666):nth-child(-n+673) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(675) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+677):nth-child(-n+678) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+681):nth-child(-n+682) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(685) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+694):nth-child(-n+700) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+707):nth-child(-n+713) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+722):nth-child(-n+731) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+734):nth-child(-n+744) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+749):nth-child(-n+774) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+778):nth-child(-n+802) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+804):nth-child(-n+829) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+833):nth-child(-n+857) {
+  visibility: hidden;
+}
+
+#kaart .blok:nth-child(n+860):nth-child(-n+868) {
+  visibility: hidden;
+}
+
+
+
+
+
+/*  stad   */
+.stadBody {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+#subgenres {
+  padding-left: 5%;
+  position: relative;
+  top: -75px;
+}
+
+#subgenres .terugButton {
+  position: relative;
+  top: -30px;
+}
+
+#subgenres h2 {
+  position: relative;
+  top: -20px;
+}
+
+#subgenres ol {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: calc(500px - 18vw);
+  margin-top: 60px;
+}
+
+#subgenres li {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+#subgenres li b {
+  margin-right: -5px;
+  padding: 6px;
+  text-align: right;
+  font-size: .8em;
+  color: #8B8B8B;
+  font-weight: 100;
+}
+
+#subgenres li p {
+  background-color: #3D3D3D;
+  color: white;
+  font-size: .9em;
+  font-weight: 100;
+  border-radius: 20px 20px 20px 20px;
+  margin: 0px 10px 5px 10px;
+  padding: 5px 10px 5px 10px;
+}
+
+.overlay {
+  display: none;
+}
+
+#genreOverlay {
+  position: absolute;
+  background-color: #EAEAEA;
+  top: 0;
+  padding: 5%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  height: 100vh;
+}
+
+.genreFilter h4 {
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+
+.genreFilter h2 {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.genreFilter ol {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: calc(500px - 18vw);
+
+}
+
+.genreFilter li {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.genreFilter li b {
+  margin-right: -5px;
+  padding: 6px;
+  text-align: right;
+  font-size: .8em;
+  color: #8B8B8B;
+  font-weight: 100;
+}
+
+.genreButton {
+  background-color: #3D3D3D;
+  color: white;
+  font-size: .9em;
+
+  border-radius: 20px 20px 20px 20px;
+  margin: 0px 10px 5px 10px;
+  padding: 0px 10px 0px 3px;
+  display: flex;
+  align-items: center;
+  transition: .2s;
+}
+
+.genreButton:hover {
+  transform: scale(1.1);
+
+  transition: .2s;
+
+
+}
+
+.genreCirkel {
+  width: 20px;
+  height: 20px;
+  background-color: #26E888;
+  display: block;
+  border-radius: 100%;
+}
+
+.c1 {
+  background-color: #AAAAAA;
+}
+
+.c2 {
+  background-color: #039BAF;
+}
+
+.c3 {
+  background-color: #00F6D9;
+}
+
+.c4 {
+  background-color: #26E889;
+}
+
+.c5 {
+  background-color: #028135;
+}
+
+.c6 {
+  background-color: #679701;
+}
+
+.c7 {
+  background-color: #C9AB0F;
+}
+
+.c8 {
+  background-color: #FFC989;
+}
+
+.c9 {
+  background-color: #FED833;
+}
+
+.c10 {
+  background-color: #FFB423;
+}
+
+.c11 {
+  background-color: #B2765C;
+}
+
+.c12 {
+  background-color: #FA5E32;
+}
+
+.c13 {
+  background-color: #FF2727;
+}
+
+.c14 {
+  background-color: #FF3D8E;
+}
+
+.c15 {
+  background-color: #D743D1;
+}
+
+.c16 {
+  background-color: #A338E0;
+}
+
+.c17 {
+  background-color: #1140EA;
+}
+
+.c18 {
+  background-color: #7291FF;
+}
+
+.c19 {
+  background-color: #AAD6FF;
+}
+
+.c20 {
+  background-color: #85D8DE;
+}
+
+#genreOverlay .genre {
+  padding: 5px;
+}
+
+.filterKruisje {
+  border: none;
+  background-color: transparent;
+  margin-top: 50px;
+}
+
+.filterKruisje:hover {
+  transform: scale(1.2);
+}
+
+
+.oproepFilterScherm {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
+.releases h2 {
+  background-color: #322F2C;
+  color: #FFFFFF;
+  padding: 1% 1% 1% 5%;
+  margin-bottom: 0;
+}
+
+.art {
+  background-image: url(./img/PATTERN_Bsmall.png);
+  background-size: cover;
+
+  padding: 1% 5% 1% 5%;
+}
+
+
+
+.song {
+  background-color: #FFFFFF;
+  border: 1px dashed #322F2C;
+  display: flex;
+  gap: 10px;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+  transition: .3s;
+  transition-timing-function: cubic-bezier(.74, .02, .91, .48);
+}
+
+.song div:nth-child(2) {
+  position: relative;
+}
+
+
+.song figure {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 1;
+  width: 75px;
+  height: 100%;
+}
+
+.song img {
+  width: 100%;
+}
+
+.favButton {
+  background-image: url(./img/Star.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 30%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+
+
+.favButton:hover {
+  background-color: #FC734C;
+  transform: scale(1.4);
+  transition: .2s;
+}
+
+
+.song button {
+
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  border-radius: 50%;
+
+}
+
+.song h2 {
+  background-color: transparent;
+  color: #322F2C;
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0px 0px 0px 0px;
+}
+
+.song p {
+  font-size: .8em;
+  margin: 5px 0px 0px 0px;
+}
+
+
+.song:hover {
+  background-color: #26E888;
+  transform: scale(1.05);
+  transition: .3s;
+  transition-timing-function: cubic-bezier(.67, .12, .91, .68);
+}
+
+
+.trackDuration {
+  position: absolute;
+  right: 0;
+}
+
+.releaseDate {
+  position: absolute;
+  bottom: 0;
+}
+
+
+.meerWeergeven {
+  background-color: #322F2C;
+  color: #FFFFFF;
+  padding: 10px;
+  border: 1px dashed #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  max-width: 400px;
+  cursor: pointer;
+  transition: .2s;
+  margin: 30px auto 0px;
+
+}
+
+.meerWeergeven:hover {
+  background-color: #444444;
+  transition: .2s;
+  transform: scale(.95);
+
+}
+
+.meerWeergeven img {
+  margin-left: 10px;
+}
+
+
+.oproepen {
+  background-color: #26E888;
+
+}
+
+.oproepen .meerWeergeven {
+  position: relative;
+  top: -70px;
+}
+
+
+
+.oproepScherm {
+  display: block;
+  padding-bottom: 30px;
+
+}
+
+.oproepenTopdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.oproepScherm>div h1 {
+  padding-top: 20px;
+}
+
+
+.oproepen h1 {
+  font-size: 3em;
+  font-family: 'GraphikExtralight';
+  margin-bottom: 0px;
+}
+
+.oproepen>h2 {
+  margin-top: 0px;
+}
+
+.oproepen .cards {
+  padding: 1% 5% 5% 5%;
+}
+
+.hide {
+  display: none;
+}
+
+.cards {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+
+/* ArtistPAGEE???? */
+.artistBody {
+  background-image: url('./img/PATTERN_B2.png');
+  background-size: contain;
+  padding: 40px;
+}
+
+.artistBody h4 {
+  margin-bottom: -15px;
+}
+
+.artistBody article {
+  background-color: #FFFBFA;
+  padding: 20px;
+  margin: auto;
+  max-width: 1600px;
+}
+
+.artistBody footer {
+  margin: -40px;
+}
+
+.artistBody article>section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.artistBody h3 {
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+
+.artistHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.artistHeader div {
+  display: flex;
+  align-items: center;
+}
+
+.city {
+  transition: .2s;
+}
+
+.city:hover {
+  text-decoration: underline;
+  cursor: pointer;
+
+  transform: scale(1.05);
+  transition: .2s;
+}
+
+.city a {
+  text-decoration: none;
+}
+
+.close {
+  cursor: pointer;
+  transition: .2s;
+}
+
+.close:hover {
+  transform: scale(.9);
+}
+
+
+.artistHeader .pf {
+  width: 20%;
+  margin: 0px 30px 0px 0px;
+}
+
+.artistHeader .pf img {
+  width: 100%;
+}
+
+
+
+.artistHeader div>div {
+  flex-direction: column;
+
+
+}
+
+.artistHeader h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-family: 'GraphikExtraLight';
+  margin-bottom: 0px;
+}
+
+.artistHeader h2 {
+  margin-top: 0px;
+  font-size: 1.4em;
+  width: 100%;
+}
+
+.artistData {}
+
+.artistData>div {
+  width: 30%;
+}
+
+.editProfile {
+  border-radius: 50px;
+  border: 2px dashed #322F2C;
+  background-color: #FFFBF9;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 10px;
+  transition: .2s;
+}
+
+.editProfile:hover {
+  border-radius: 50px;
+  border: 2px solid #322F2C;
+  transform: rotate(-5deg);
+  transition: .2s;
+}
+
+.infoSection p {
+  font-size: .9em;
+  line-height: 1.4;
+  width: 90%;
+}
+
+
+.tourData {
+  overflow-y: scroll;
+  height: 340px;
+
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #322F2C;
+
+  border-radius: 50px;
+}
+
+/* or add}
+/* ::-webkit-scrollbar-button — the buttons on the scrollbar (arrows pointing upwards and downwards that scroll one line at a time).
+
+::-webkit-scrollbar-track — the track (progress bar) of the scrollbar, where there is a gray bar on top of a white bar.
+::-webkit-scrollbar-track-piece — the part of the track (progress bar) not covered by the handle.
+::-webkit-scrollbar-corner — the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet. This is often the bottom-right corner of the browser window.
+::-webkit-resizer */
+
+
+.tourData h3 {}
+
+.concert {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.concert div:nth-child(1) {
+  border: 1px solid #322F2C;
+  border-radius: 50px;
+  text-align: center;
+  padding: 0px;
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+
+.concert .maand {
+  font-size: .6em;
+  font-family: 'GraphikSemi';
+  margin: 0;
+}
+
+.concert .dag {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.concert div:nth-child(2) p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.concert div:nth-child(2) p:nth-child(1) {
+  font-size: .9em;
+}
+
+.concert div:nth-child(2) p:nth-child(2) {
+  font-size: .7em;
+}
+
+.greenStuff {
+  background-color: #26E888;
+  margin: -20px;
+  z-index: 4;
+  position: relative;
+
+}
+
+.greenStuff>div {
+  border: 2px dashed #322F2C;
+  padding: 20px;
+}
+
+
+.oproep {
+  background-color: #FFFBF9;
+  border: 1px dashed #322F2C;
+  padding: 10px;
+  width: 30%;
+  gap: 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: .3s;
+  transition-timing-function: cubic-bezier(.74, .02, .91, .48);
+}
+
+.artistBody .oproep {
+  width: 60%;
+}
+
+
+.oproepHeader {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+}
+
+.oproep figure {
+  margin: 0;
+  width: 10%;
+}
+
+.oproep figure img {
+  width: 100%;
+}
+
+.distance {
+  opacity: .5;
+}
+
+.oproep .artiestNaam {
+  font-size: 1.2em;
+  font-family: 'GraphikRegular';
+  font-weight: 100;
+}
+
+
+.profileButton {
+  /* margin-top: 10px; */
+}
+
+
+.tags {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: .9em;
+  padding-top: 7px;
+}
+
+.tags div {
+  background-color: #26E888;
+  border-radius: 50px;
+  padding: 6px 10px 6px 10px;
+  font-weight: 100;
+}
+
+
+
+
+
+.loginBody {
+  background-image: url(./img/Login.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+
+
+.favoBody {
+  background-image: url(./img/Favo.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+
+
+
+
+footer {
+  padding: 5%;
+}
+
+.homeBody .allesButton {
+  background-color: #322F2C;
+  color: white;
+  border: 1px dashed white;
+}
+
+.homeBody .allesButton img {
+  filter: invert(100%)
+}
+
+.kaartBody .kaartButton {
+  background-color: #322F2C;
+  color: white;
+  border: 1px dashed white;
+}
+
+.kaartBody .kaartButton img {
+  filter: invert(100%);
+}
+
+.loginBody .profileButton {
+  background-color: #322F2C;
+  color: white;
+  border: 1px dashed white;
+}
+
+.loginfBody .profileButton img {
+  filter: invert(100%);
+}
+
+.favoBody .footerFavoButton {
+  background-color: #322F2C;
+  color: white;
+  border: 1px dashed white;
+}
+
+.favoBody .footerFavoButton img {
+  filter: invert(100%);
+}
+
+
+.homeBody footer,
+.kaartBody footer {
+  position: relative;
+  bottom: 200px;
+}
+
+.stadBody footer {
+  background-image: url(./img/PATTERN_B2.png);
+  background-size: cover;
+}
+
+.loginBody footer,
+.favoBody footer {
+  position: absolute;
+  bottom: -50px;
+}
+
+footer nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+footer button {
+  background-color: #FFFBF9;
+  height: 60px;
+  font-size: 1em;
+  border: 1px dashed #322F2C;
+  border-radius: 50px;
+  min-width: 60px;
+  transition: 1s;
+}
+
+.footerFavoButton img {
+  width: 17px;
+}
+
+.kaartButton,
+.allesButton {
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  width: 20vw;
+  max-width: 170px;
+  transition: .2s;
+  position: relative;
+}
+
+.kaartButton img,
+.allesButton img {
+  position: relative;
+  top: -2px;
+  left: -5px;
+  width: 20px;
+}
+
+.profileButton {
+  margin-left: auto;
+}
+
+footer button:hover {
+  border: 2px solid black;
+  transition: 1s;
+  transform: scale(1.2);
+  transform: rotate(7deg);
+  transition-timing-function: cubic-bezier(.05, .8, .23, .97);
+}
+
+.kleurAnimatie {
+  animation-duration: .3s;
+  animation-name: kleurtje;
+  background-color: #FED833;
+}
+
+.kleurAnimatie2 {
+  background-color: #26E888;
+  color: #322F2C;
+}
+
+
+.splash {
+  font-family: 'GraphikExtraLight';
+  font-size: 1em;
+  text-align: center;
+  border: 0px;
+  background-color: #EDE9E9;
+
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  transition: .2s;
+  transition-timing-function: cubic-bezier(.74, .02, .91, .48);
+
+}
+
+/* .splash:hover {
+  transform: scale(1.2);
+  transition: 2s;
+  transition-timing-function: cubic-bezier(.74, .02, .91, .48);
+} */
+.splash>section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 80px auto;
+}
+
+.splash>section img {
+  cursor: pointer;
+}
+
+
+
+.splash h1 {
+  font-size: 2em;
+
+
+  color: #322F2C;
+}
+
+
+.logo {
+  width: 60px;
+  opacity: .2;
+  transition: .2s;
+}
+
+.logo:hover {
+  opacity: .8;
+  transition: .2s;
+}
+
+.verborgen {
+  visibility: hidden;
+}
+
+.splash>div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  font-family: 'GraphikRegular';
+}
+
+.splash>div img {
+  transform: scale(0.99);
+  transition: .2s;
+}
+
+.splash>div img:hover {
+  transform: scale(1.05);
+  transition: .2s;
+}
+
+.splash figcaption {
+  margin-top: 30px;
+}
+
+.splash figure p {
+  margin-top: 5px;
+  font-weight: 100;
+  font-size: .8em;
+}
+
+.playButton {
+  margin: 50px auto;
+  font-size: 4em;
+  padding: 30px 40px;
+  border: 1px dashed #322F2C;
+  border-radius: 100px;
+}
+
+.playButton:hover {
+  transform: rotate(7deg);
+  border: 1px solid #322F2C;
+  cursor: pointer;
+}
+
+
+
+
+.filterFlex {
+  gap: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+
+.filtersToepassen {
+  border: 1px dashed #322F2C;
+  width: 30%;
+  background: #26E888;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  font-size: 1.1em;
+}
+
+.filtersToepassen img {
+  margin-left: 10px;
+
+}
+
+.sliderdiv {
+  border: 1px dashed #322F2C;
+  width: 30%;
+  padding: 10px;
+}
+
+
+.sliderdiv p:nth-child(2) {
+  opacity: .5;
+}
+
+.sliderdiv>div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.sliderdiv>div output {
+  font-size: .8em;
+  width: 13%;
+}
+
+
+.slidecontainer {
+  width: 100%;
+  /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
+  width: 100%;
+  /* Full-width */
+  height: 5px;
+  /* Specified height */
+  background: #322F2C;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 1;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s;
+  /* 0.2 seconds transition on hover */
+  border-radius: 50px;
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1;
+  /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  border-radius: 50%;
+  background: #322F2C;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  border-radius: 50%;
+  background: #322F2C;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+
+
+.oproepFiltersectie {
+  background-color: #EEE9E9;
+  padding: 1% 5% 1% 5%;
+}
+
+.oproepFiltersectie .terugButton {
+  position: relative;
+  top: -30px;
+}
+
+
+.headingsflex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.headingsflex h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.headingsflex section {
+  width: 35%;
+}
+
+.oproepGenres {}
+
+
+.oproepFiltersectie h2 {
+  margin-bottom: 10px 0px 20px 0px;
+  width: 30%;
+}
+
+.oproepFiltersectie ol {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: calc(500px - 18vw);
+  margin-top: 0px;
+}
+
+.oproepFiltersectie li {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.oproepFiltersectie li p {
+  background-color: #3D3D3D;
+  color: white;
+  font-size: .9em;
+  font-weight: 100;
+  border-radius: 20px 20px 20px 20px;
+  margin: 0px 10px 5px 10px;
+  padding: 5px 10px 5px 10px;
+}
+
+.oproepFiltersectie .genreCirkel {
+  margin-left: -5px;
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes kleurtje {
+  from {
+    background-color: #EA5E33;
+    transform: scale(1.4);
+    transform: rotate(0deg);
+  }
+
+  to {
+    background-color: #FED833;
+    transform: scale(2);
+    transform: rotate(360deg);
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  footer nav {
+    gap: 10px;
+
+  }
+
+  .kaartButton,
+  .allesButton {
+    border-radius: 30px;
+    padding: 20px;
+    width: 25vw;
+    max-width: 170px;
+    font-size: .9em;
+    align-items: center;
+  }
+
+  #layout {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .infoCard {
+    width: 89%;
+  }
+
+  .legendaButton {
+    height: 70px;
+    width: 70px;
+    top: 20px;
+    display: block;
+  }
+
+
+  .art {
+    /* //andere image */
+  }
+
+  .artistBody {
+    padding: 5%;
+  }
+
+  .artistBody article>section {
+    flex-direction: column;
+  }
+
+  .artistData>div {
+    width: 100%;
+  }
+
+  .filterFlex {
+    flex-direction: column;
+  }
+
+  .filtersToepassen {
+    width: 100%;
+  }
+
+  .sliderdiv {
+    width: 100%;
+  }
+
+  .headingsflex {
+    flex-direction: column;
+  }
+
+  .slidecontainer {
+    width: 75%;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 0px;
+    background-color: #26E889;
+    z-index: 100;
+  }
+
+  .oproepFiltersectie ol {
+   
+    height: calc(500px - 28vw);}
+
+  .kaartLegenda {
+    display: none;
+  }
+
+  .kaartBody footer {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .splash {
+    user-select: none;
+      height: 4000px;
+  }
+
+  .splash .logo {
+    display: none;
+  }
+
+  .splash h1 {
+    font-size: 1.8em;
+    width: 65%;
+    text-align: left;
+    margin-top: -20px;
+    color: #322F2C;
+  }
+
+  .splash>div {
+    justify-content: center;
+    gap: 45px;
+  }
+
+  .splash figcaption {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+
+  .splash>section {
+    margin: 80px auto 10px;
+
+  }
+
+  .stadBody .stadTop {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 40px;
+  }
+
+  .stadBody .stadNaam {
+    font-family: 'GraphikExtralight';
+    font-weight: 100;
+    font-size: .6em;
+    margin-top: 5px;
+  }
+
+  .terugButton {
+    width: 50%;
+  }
+
+  .terugButton img {
+    width: 30%;
+  }
+
+  .scrollButton {
+    bottom: 2vw;
+    margin-left: 4%;
+    margin-right: 0%;
+  }
+
+  #subgenres {
+    padding-left: 5%;
+    position: relative;
+    top: -34vw;
+    max-width: 347px;
+  }
+
+  .scrollButton div {
+    height: 45px;
+    width: 90vw;
+
+  }
+
+  #subgenres h2 {
+    display: none;
+  }
+
+  .oproep {
+    width: 100%;
+  }
+
+  .oproepenTopdiv {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .filterOproepen {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    border-radius: 0px;
+    font-size: 1em;
+
+  }
+
+}
