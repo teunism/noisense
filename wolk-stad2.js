@@ -459,6 +459,116 @@ const artiesten = [{
         time_signature: 4
     }
 
+},
+{
+    artiestNaam: 'Tuna Salad',
+    songNaam: 'Loose',
+    songImg: 'https://i.scdn.co/image/ab67616d00001e022ff52b8e8e3150ff7e8e0a27',
+    songUrl: 'https://p.scdn.co/mp3-preview/3923ff7b088697c31d946d70db648f053aa441f8?cid=774b29d4f13844c495f206cafdad9c86',
+    releaseDate: '2020',
+    audio_features: {
+        danceability: 0.55,
+        energy: 0.5,
+        key: 9,
+        loudness: -9.853,
+        mode: 1,
+        speechiness: 0.0352,
+        acousticness: 0.0748,
+        instrumentalness: 0.848,
+        liveness: 0.0812,
+        valence: 0.428,
+        tempo: 178.019,
+        duration_ms: 197965,
+        time_signature: 4
+    }
+},
+{
+    artiestNaam: 'Iguana Death Cult',
+    songNaam: 'Nature Calls',
+    songImg: 'https://i.scdn.co/image/ab67616d00001e02c199ca398728bafed5dbac7d',
+    songUrl: 'https://p.scdn.co/mp3-preview/4ac839889b6facdf2d5d97ceb6453474397758e7?cid=774b29d4f13844c495f206cafdad9c86',
+    releaseDate: '2020',
+    audio_features: {
+        danceability: 0.448,
+        energy: 0.939,
+        key: 10,
+        loudness: -3.178,
+        mode: 1,
+        speechiness: 0.0633,
+        acousticness: 0.00455,
+        instrumentalness: 0.0479,
+        liveness: 0.166,
+        valence: 0.666,
+        tempo: 102.434,
+        duration_ms: 228293,
+        time_signature: 4
+    }
+},
+{
+    artiestNaam: 'Josephine Odhil',
+    songNaam: 'Be Your Better Self',
+    songImg: 'https://i.scdn.co/image/ab67616d00001e02c2ddb3cb92b474284a23b37f',
+    songUrl: 'https://p.scdn.co/mp3-preview/22c6d35182d8d4757ff2433a7c21f16715b44c9b?cid=774b29d4f13844c495f206cafdad9c86',
+    releaseDate: '2020',
+    audio_features:   {
+        danceability: 0.437,
+        energy: 0.499,
+        key: 7,
+        loudness: -7.845,
+        mode: 1,
+        speechiness: 0.0322,
+        acousticness: 0.014,
+        instrumentalness: 0.0000704,
+        liveness: 0.605,
+        valence: 0.787,
+        tempo: 170.097,
+        duration_ms: 209560,
+        time_signature: 4
+      }
+},
+{
+    artiestNaam: 'Peperbek',
+    songNaam: 'Bel Maar Niet',
+    songImg: 'https://i.scdn.co/image/ab67616d00001e02fbfb6f21c01d24db218f6415',
+    songUrl: 'https://p.scdn.co/mp3-preview/b9f42fc67695d1045c9107e6278e5ffa30d31774?cid=774b29d4f13844c495f206cafdad9c86',
+    releaseDate: '2020',
+    audio_features:   {
+      danceability: 0.762,
+      energy: 0.56,
+      key: 4,
+      loudness: -12.717,
+      mode: 0,
+      speechiness: 0.115,
+      acousticness: 0.102,
+      instrumentalness: 0,
+      liveness: 0.0937,
+      valence: 0.671,
+      tempo: 95.961,
+      duration_ms: 184288,
+      time_signature: 4
+      }
+},
+{
+    artiestNaam: 'Joep Beving',
+    songNaam: 'Nocturnal',
+    songImg: 'https://i.scdn.co/image/ab67616d00001e0267c8d88e9c22268c926f278b',
+    songUrl: 'https://p.scdn.co/mp3-preview/c22e060eefd686d92b806074c9208b11c0d867c0?cid=774b29d4f13844c495f206cafdad9c86',
+    releaseDate: '2020',
+    audio_features:   { 
+        danceability: 0.219,
+        energy: 0.0153,
+        key: 9,
+        loudness: -33.563,
+        mode: 0,
+        speechiness: 0.0346,
+        acousticness: 0.994,
+        instrumentalness: 0.923,
+        liveness: 0.0934,
+        valence: 0.1,
+        tempo: 57.439,
+        duration_ms: 312757,
+        time_signature: 4
+  }
 }
 ];
 
@@ -627,7 +737,7 @@ function init() {
         });
         const schaalFactor2 = 110;
         const foto = new THREE.Sprite(fotoMateriaal);
-        foto.scale.set(5, 5, 1);
+        foto.scale.set(7, 7, 1);
         foto.position.set(scale(artiesten[step].audio_features.energy, [0, 1], [-1, 1]) * schaalFactor2,
             scale(artiesten[step].audio_features.danceability, [0, 1], [1, -.6]) * schaalFactor2,
             scale(artiesten[step].audio_features.valence, [0, 1], [-1, 1]) * schaalFactor2

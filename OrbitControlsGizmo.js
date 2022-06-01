@@ -13,7 +13,7 @@ class OrbitControlsGizmo {
 			bubbleSizePrimary: 8,
 			bubbleSizeSecondary: 6,
 			lineWidth: 2,
-			fontSize: "12px",
+			fontSize: "16px",
 			fontFamily: "arial",
 			fontWeight: "bold",
       className: "obit-controls-gizmo",
@@ -93,7 +93,7 @@ class OrbitControlsGizmo {
         { axis: "x", direction: new Vector3(1, 0, 0), size: size.primary, color: colors.x, line, label: "⚡", position: new Vector3(0, 0, 0)  },
         { axis: "y", direction: new Vector3(0, 1, 0), size: size.primary, color: colors.y, line, label: "🎶", position: new Vector3(0, 0, 0)  },
         { axis: "z", direction: new Vector3(0, 0, 1), size: size.primary, color: colors.z, line, label: "😀", position: new Vector3(0, 0, 0)  },
-        { axis: "-x", direction: new Vector3(-1, 0, 0), size: size.secondary, color: colors.x, label: "🌴", position: new Vector3(0, 0, 0) },
+        { axis: "-x", direction: new Vector3(-1, 0, 0), size: size.secondary, color: colors.x, label: "🍃", position: new Vector3(0, 0, 0) },
         { axis: "-y", direction: new Vector3(0, -1, 0), size: size.secondary, color: colors.y, label: "🎵", position: new Vector3(0, 0, 0) },
         { axis: "-z", direction: new Vector3(0, 0, -1), size: size.secondary, color: colors.z,  label: "😭", position: new Vector3(0, 0, 0) },
       ];
