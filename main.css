@@ -1181,12 +1181,13 @@ button {
 
 .editProfile {
   border-radius: 50px;
-  border: 2px dashed #322F2C;
+  border: 1px dashed #322F2C;
   background-color: #FFFBF9;
   font-size: 1em;
   text-transform: uppercase;
   padding: 10px;
   transition: .2s;
+  margin-top: 10px; 
 }
 
 .editProfile:hover {
