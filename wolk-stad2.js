@@ -569,6 +569,28 @@ const artiesten = [{
         duration_ms: 312757,
         time_signature: 4
   }
+},
+{
+    artiestNaam: 'Tuna Salad',
+    songNaam: 'Zaterdag',
+    songImg: 'https://i.scdn.co/image/ab67616d00001e02e1e7558f8074e0afa94039b3',
+    songUrl: 'https://p.scdn.co/mp3-preview/e35a7235d6ddea16679c5dc3084d613fab2c5271?cid=774b29d4f13844c495f206cafdad9c86',
+    releaseDate: '2020',
+    audio_features:   { 
+      danceability: 0.334,
+      energy: 0.82,
+      key: 2,
+      loudness: -7.421,
+      mode: 1,
+      speechiness: 0.0421,
+      acousticness: 0.0283,
+      instrumentalness: 0.973,
+      liveness: 0.106,
+      valence: 0.713,
+      tempo: 180.02,
+      duration_ms: 146958,
+      time_signature: 3
+  }
 }
 ];
 
