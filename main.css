@@ -1428,7 +1428,11 @@ footer {
 .homeBody footer,
 .kaartBody footer {
   position: relative;
-  bottom: 200px;
+  bottom: 150px;
+}
+
+.homeBody {
+  overflow-y: hidden;
 }
 
 .stadBody footer {
